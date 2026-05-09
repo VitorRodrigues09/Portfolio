@@ -18,6 +18,7 @@ botao.addEventListener("click", function () {
 }
 );
 
+'use strict';
 const NOME = "Vitor Rodrigues";
 let tituloProfissional = "Designer de Jogos Profissional e Desenvolvedor de Software";
 let minhaBio = "Sou um designer de jogos profissional e desenvolvedor de software com mais de 10 anos de experiência. Tenho trabalhado em diversos projetos de jogos, desde jogos indie até grandes produções. Sou apaixonado por criar experiências de jogo envolventes e inovadoras, e estou sempre buscando aprender novas habilidades e técnicas para aprimorar meu trabalho. Além disso, sou um entusiasta da tecnologia e adoro explorar as últimas tendências em desenvolvimento de software e design de jogos.";
@@ -149,3 +150,50 @@ function exibirPerfil() {
   }
 }
 
+for  (let i = 0;i <=20;i++) {
+  let pares = (i % 2 === 0) ? "Par" : "Ímpar";
+  console.log(`${i} é ${pares}`);
+}
+
+let object = {
+  Nome: "Vitor",
+  Idade: 24,
+  Profissão: "Designer de Jogos"
+};
+
+for (let chave in object) {
+  document.write(`<p>${chave}: ${object[chave]}</p>`);
+}
+
+let alunos = ["Vitória", "Beatriz", "Gabriel", "Vitor", "Leo"];
+for (let contem of alunos) {
+ if (contem === "Vitor") {
+  document.write(`<p> ${contem} - Presente!</p>`);
+  } else {
+  document.write(`<p> ${contem} - Ausente!</p>`);
+  }
+ }
+
+ let num  = prompt ("Prompt 1 - Diga um número par")
+  while (num % 2 !== 0) {
+    num = prompt("Ops, esse número não é par. Tente novamente:");
+     };
+
+      do {
+        num = prompt ("Prompt 2 - Diga um número par:");
+      } while (num % 2 !== 0);
+
+let qualidades = {
+  Nome: "Vitor Rodrigues Andrade",
+  Idade: 17,
+  Profissão: "Sei desenhar, sou criativo, sou dedicado, sou amigável, sou um bom aluno"
+};
+
+for (let chave in qualidades) {
+  document.write(`<p>${chave}: ${qualidades[chave]}</p>`);
+}
+
+  //let num = prompt("Diga um número par");
+//while (num % 2 !== 0) {
+//  num = prompt("Ops, esse número não é par. Por favor, tente novamente");
+//};
