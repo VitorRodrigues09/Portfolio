@@ -193,7 +193,25 @@ for (let chave in qualidades) {
   document.write(`<p>${chave}: ${qualidades[chave]}</p>`);
 }
 
+let projetos = [
+  //Objeto de index 0
+
+  {nome : "FORTNITE: Chapter 8 Map",
+   tecnologias : ["Unreal Engine 5.7"],
+   conhecimentos : ["Modelagem 3D", "Texturização", "Iluminação", "Design de Níveis"],
+   descricao : "Criação de um mapa completo para o jogo Fortnite, utilizando Unreal Engine 5.7. O projeto envolve modelagem 3D detalhada, texturização de acordo com o estilo do jogo, iluminação cartoonesca e design de níveis envolventes para proporcionar uma experiência de jogo imersiva que cative o jogador com os locais e cenários."
+  },
+]
+
+document.createElement("h2").innerText = projetos[0].nome;
+document.createElement("p").innerText = projetos[0].descricao;
+document.createElement("ul").innerText = "Tecnologias Utilizadas: " + projetos[0].tecnologias.join(", ");
+
+console.log(projetos[0].nome);
+console.log(projetos[0].tecnologias);
+console.log(projetos[0].descricao);
+
   //let num = prompt("Diga um número par");
 //while (num % 2 !== 0) {
-//  num = prompt("Ops, esse número não é par. Por favor, tente novamente");
+//num = prompt("Ops, esse número não é par. Por favor, tente novamente");
 //};
